@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Account &amp; Data Deletion · Claude Learn · Latitude 44</title>
+  <meta name="description" content="How to request deletion of your data from the Claude Learn mobile app by Latitude 44.">
+  <link rel="canonical" href="https://latitude44.app/account-deletion">
+  <meta name="robots" content="noindex,follow">
+  <style>
+    :root {
+      --navy: #0A1E3D;
+      --navy-soft: #DBEAFE;
+      --cream: #FFFBF2;
+      --gold: #D4A857;
+      --gold-deep: #8B6F2F;
+      --text: #1F2937;
+      --text-muted: #6B7280;
+      --card: #FFFFFF;
+      --border: #E5E7EB;
+      --maxw: 760px;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --cream: #0A1228;
+        --text: #F3F4F6;
+        --text-muted: #9CA3AF;
+        --card: #131C36;
+        --border: #1F2A4A;
+        --navy-soft: #1A2848;
+      }
+    }
+    * { box-sizing: border-box; }
+    html, body {
+      margin: 0; padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background: var(--cream);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+    .nav {
+      background: var(--navy);
+      color: var(--gold);
+      padding: 14px 24px;
+      text-align: center;
+      font-size: 13px;
+      letter-spacing: 2.4px;
+      font-weight: 700;
+      text-transform: uppercase;
+      border-bottom: 1px solid var(--gold);
+    }
+    .nav a { color: var(--gold); text-decoration: none; }
+    .hero {
+      background: linear-gradient(180deg, var(--navy-soft) 0%, var(--cream) 100%);
+      padding: 56px 24px 32px;
+      text-align: center;
+    }
+    .hero-icon {
+      width: 64px; height: 64px;
+      border-radius: 32px;
+      background: var(--navy);
+      color: var(--gold);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 30px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: 36px;
+      font-weight: 900;
+      letter-spacing: -0.5px;
+      margin: 0 0 8px;
+      color: var(--navy);
+    }
+    @media (prefers-color-scheme: dark) { h1 { color: var(--gold); } }
+    .eyebrow {
+      font-size: 11px;
+      letter-spacing: 2px;
+      font-weight: 800;
+      text-transform: uppercase;
+      color: var(--text-muted);
+      margin: 0 0 10px;
+    }
+    main { max-width: var(--maxw); margin: 0 auto; padding: 24px 24px 64px; }
+    section.card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+      margin-bottom: 16px;
+    }
+    section.card h2 {
+      font-size: 20px;
+      font-weight: 800;
+      margin: 0 0 12px;
+      color: var(--text);
+      letter-spacing: -0.2px;
+    }
+    section.card p { margin: 0 0 12px; color: var(--text); font-size: 15px; }
+    section.card p:last-child { margin-bottom: 0; }
+    ul { margin: 8px 0 12px; padding-left: 20px; }
+    ul li { margin-bottom: 6px; font-size: 15px; }
+    a { color: var(--gold-deep); }
+    a:hover { text-decoration: underline; }
+    @media (prefers-color-scheme: dark) { a { color: var(--gold); } }
+    .callout {
+      background: var(--navy-soft);
+      border-left: 4px solid var(--gold);
+      padding: 14px 18px;
+      margin: 12px 0;
+      border-radius: 6px;
+      font-size: 14px;
+    }
+    .step {
+      display: flex;
+      gap: 14px;
+      margin-bottom: 18px;
+      align-items: flex-start;
+    }
+    .step-num {
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      border-radius: 16px;
+      background: var(--navy);
+      color: var(--gold);
+      font-weight: 900;
+      font-size: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      letter-spacing: 0;
+    }
+    .step-body { flex: 1; min-width: 0; }
+    .step-body strong { display: block; font-size: 15px; margin-bottom: 4px; color: var(--text); }
+    .step-body p { font-size: 14px; color: var(--text-muted); margin: 0; }
+    .mail-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 14px 22px;
+      background: var(--navy);
+      color: var(--gold);
+      border-radius: 999px;
+      text-decoration: none;
+      font-weight: 800;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      margin-top: 8px;
+      border: 1.5px solid var(--gold);
+    }
+    .mail-cta:hover { text-decoration: none; opacity: 0.92; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 8px 0;
+      font-size: 14px;
+    }
+    th, td {
+      padding: 10px 12px;
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+    }
+    th { font-weight: 800; color: var(--text); background: var(--navy-soft); }
+    td { color: var(--text); }
+    code {
+      background: var(--navy-soft);
+      padding: 2px 6px;
+      border-radius: 4px;
+      font-family: "SF Mono", Menlo, Monaco, Consolas, monospace;
+      font-size: 13px;
+    }
+    footer {
+      text-align: center;
+      padding: 32px 24px;
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; margin: 0 8px; }
+    footer a:hover { color: var(--gold-deep); text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <a href="https://latitude44.app/">Latitude 44 · Claude Learn</a>
+  </nav>
+
+  <header class="hero">
+    <div class="hero-icon" aria-hidden="true">🗑️</div>
+    <p class="eyebrow">Your Rights</p>
+    <h1>Account &amp; Data Deletion</h1>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>About Claude Learn accounts</h2>
+      <p>
+        <strong>Claude Learn does not have user accounts.</strong> The App is anonymous-by-design — we never
+        ask for your name, email, phone number, or password, and you don't log in. There is nothing to
+        "delete an account" because no account exists.
+      </p>
+      <p>
+        We do, however, retain a small amount of <strong>anonymous data</strong> tied to a randomly-generated
+        device identifier, so that:
+      </p>
+      <ul>
+        <li>If you reinstall the App, your one-time in-app purchases (e.g. Course, Pro, Founder) can be restored.</li>
+        <li>We can improve the App using aggregated, anonymous usage analytics.</li>
+      </ul>
+      <p>This page explains how to request deletion of that data.</p>
+    </section>
+
+    <section class="card">
+      <h2>What can be deleted</h2>
+      <p>You may request deletion of any of the following at any time:</p>
+      <table>
+        <thead>
+          <tr><th>Data type</th><th>What it is</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Purchase records</strong></td>
+            <td>Anonymous device ID + tier purchased + timestamp + payment session ID, used to restore your unlocks if you reinstall.</td>
+          </tr>
+          <tr>
+            <td><strong>Product analytics events</strong></td>
+            <td>Anonymous interaction events (tab opens, lesson completions, paywall views) tied to the device UUID only, stored by our analytics provider PostHog (US).</td>
+          </tr>
+          <tr>
+            <td><strong>Display name</strong></td>
+            <td>If you typed a name on the Welcome screen, it's stored on your device only — uninstalling the App removes it automatically. We never receive it.</td>
+          </tr>
+          <tr>
+            <td><strong>Practice-chat messages</strong></td>
+            <td>Already <em>not retained</em> on our servers — your typed messages are transmitted to Anthropic, the reply is delivered, and the conversation is dropped. There is nothing for us to delete.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p>
+        For full details, see our <a href="https://latitude44.app/privacy">Privacy Policy</a>.
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>How to request deletion</h2>
+
+      <div class="step">
+        <div class="step-num">1</div>
+        <div class="step-body">
+          <strong>Find your anonymous device ID</strong>
+          <p>Open the App and go to <code>Settings → About → Debug info</code>. Copy the UUID shown
+          there (it looks something like <code>4f9a2c1b-8d3e-4f7c-b2a9-1e6f8c3d5a7b</code>).
+          <br><br>
+          If you've already uninstalled the App, skip to step&nbsp;2 — we can still locate your
+          purchase records via the Google Play / Apple receipt you'd attach to your email.</p>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">2</div>
+        <div class="step-body">
+          <strong>Email us your deletion request</strong>
+          <p>Send a short email from any inbox of your choice to <strong>latitude44@protonmail.com</strong>
+          with the subject line <code>Data deletion request</code> and include:</p>
+          <ul>
+            <li>Your anonymous device ID (from step&nbsp;1), <em>or</em></li>
+            <li>The Google Play / App Store / Stripe receipt for any in-app purchase you've made (we'll find your records from the order ID).</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="step">
+        <div class="step-num">3</div>
+        <div class="step-body">
+          <strong>We confirm within 14 days</strong>
+          <p>We'll reply confirming that the matching records have been permanently deleted from our
+          backend database and from our analytics provider (PostHog). Where deletion through a third
+          party (e.g. Google Play purchase history) is outside our control, we'll point you to the
+          right contact.</p>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 24px;">
+        <a class="mail-cta" href="mailto:latitude44@protonmail.com?subject=Data%20deletion%20request%20%E2%80%94%20Claude%20Learn">
+          ✉️ Request deletion now
+        </a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Frequently asked</h2>
+      <p><strong>Can I just uninstall the App?</strong></p>
+      <p>
+        Uninstalling removes the App from your device, including any name you typed, settings, and
+        progress saved locally. It does <em>not</em> automatically delete the small server-side
+        purchase record or the analytics events tied to your anonymous device ID — use the email
+        flow above to delete those too.
+      </p>
+
+      <p><strong>Will I lose my purchases?</strong></p>
+      <p>
+        Yes — once your purchase record is deleted, the restore-purchase mechanism won't be able to
+        find it. If you reinstall the App afterwards, you'd need to make any purchases again. We
+        recommend exporting your progress screenshot from the App first if you want to keep a
+        record.
+      </p>
+
+      <p><strong>What's the difference between deletion and opt-out?</strong></p>
+      <p>
+        Deletion removes existing records. Opt-out stops <em>future</em> data collection. To opt out of
+        analytics without deleting existing data, simply uninstall the App (which stops the App from
+        firing further events). A future release may add an in-app opt-out toggle.
+      </p>
+    </section>
+
+    <div class="callout">
+      <strong>Note for Google Play reviewers and regulators:</strong> This page is the deletion
+      contact channel referenced in our Privacy Policy
+      (<a href="https://latitude44.app/privacy">latitude44.app/privacy</a>) and in our Play Store
+      "Account deletion" declaration. Claude Learn does not use user accounts (anonymous-by-design),
+      so there is no login portal — all deletion requests are handled by email per the process above.
+      Response time is committed at <strong>14 days</strong> and typically much faster.
+    </div>
+  </main>
+
+  <footer>
+    <a href="https://latitude44.app/">Home</a> ·
+    <a href="https://latitude44.app/privacy">Privacy</a> ·
+    <a href="https://latitude44.app/terms">Terms</a> ·
+    <a href="https://latitude44.app/account-deletion">Deletion</a>
+    <p style="margin-top: 12px;">© 2026 Latitude 44. Claude® is a registered trademark of Anthropic.</p>
+  </footer>
+</body>
+</html>
